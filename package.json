@@ -1,12 +1,15 @@
 {
   "name": "masalaranking",
   "version": "1.0.0",
-  "description": "",
+  "description": "cool",
   "main": "app.js",
+  "engines": {
+    "node": "12.18.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "spebud",
   "license": "ISC",
   "dependencies": {
     "Express": "^3.0.1",
