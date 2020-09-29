@@ -1,0 +1,27 @@
+const Masala = '5298883'
+const Express = require('express')
+const Cookie = '_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.|_0ADB25D5D9842A24E40D4A54FE05463170607802989B64545ED1CADE2271FF70B67900DDF836699E5FE20484667397870005386D0C4107D2F90A85F4AB5A8C1A7252F4AD45EF1F81BCFF00E0FEFD7ECE357D1ECDFF5CB88648291299D8E581408D89CE6439B39883DB493E5012775C512C49F5F549861BC9F6738B097240257BF8F731A0EBC25410C5EBF11115D475FFDCD859BD8E0B4028061DD24A13776DAD795A41769CA6B2C4CAC3262A83C0A7C99FA4452E4818BE471C022881A6C0F10FD15F5C0AE8B458C84BA45557CC24C0E414798B2E33B2A6372CA4F779ADFC66FEDDA5232924EA23970AF610FE7B95F871416AC5FF4367DC8AE6D2364498E0AC03AE086B8BC550612B526303733F9CF5AA4372F6E0E47FA38A2EE9CC18DE78CE9670EDB2E3'
+const Roblox = require('noblox.js');
+const Bot = Express();
+
+Bot.use(Express.static("public"));
+
+async function startApp(){
+    await Roblox.setCookie(Cookie);
+
+    let CurrentUser = await Roblox.getCurrentUser();
+    console.log(CurrentUser.UserName)
+}
+
+/* Bot.get("/ranker", (req, res) =>{
+    var Username = req.params("userid")
+    var Rank = req.params("rank");
+    Roblox.setRank(Masala, parseInt(Username), parseInt(Rank));
+    res.json("Ranked!");
+}); */
+
+startApp();
+Bot.listen(3000)
+
+
+console.log('o.o')
