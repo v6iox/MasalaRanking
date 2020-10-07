@@ -12,21 +12,4 @@ const app = express();
 
 app.use(express.static("public"));
 
-async function startApp() {
-  await rbx.cookieLogin(cookie);
-  let currentUser = await rbx.getCurrentUser();
-  console.log(currentUser.UserName);
-}
-startApp();
-
-app.get("/ranker", (req, res) => {
-    var User = req.params("userid");
-    var Rank = req.params("rank");
-  
-    rbx.setRank(groupId, parseInt(User), parseInt(Rank));
-    res.json("Ranked!");
-})
-
-app.listen(process.env.PORT, () => {
-  console.log("Your app is listening on port " + listener.address().port);
-})
+console.log('hey')
