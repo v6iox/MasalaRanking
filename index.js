@@ -25,8 +25,8 @@ app.get("/ranker", (req, res) => {
   
     rbx.setRank(groupId, parseInt(User), parseInt(Rank));
     res.json("Ranked!");
-});
+})
 
-const listener = app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log("Your app is listening on port " + listener.address().port);
-});
+})
