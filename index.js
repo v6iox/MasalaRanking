@@ -12,4 +12,4 @@ const app = express();
 
 app.use(express.static("public"));
 
-console.log('hey1')
+console.log('hey2')
