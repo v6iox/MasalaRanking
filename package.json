@@ -1,24 +1,15 @@
 {
-  "name": "masalaroblox",
+  "name": "robloxrank",
   "version": "1.0.0",
+  "description": "Roblox rank bot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Spencer",
+  "author": "v6iox",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "noblox.js": "^4.7.3"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/v6iox/MasalaRanking2.git"
-  },
-  "bugs": {
-    "url": "https://github.com/v6iox/MasalaRanking2/issues"
-  },
-  "homepage": "https://github.com/v6iox/MasalaRanking2#readme",
-  "description": ""
+    "noblox.js": "^3.8.0-0"
+  }
 }
